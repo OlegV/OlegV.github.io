@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>OlegV github io</title>
     <meta name="description" content="">
@@ -10,88 +11,194 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-  </head>
-  <body>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/styles/jquery.fancybox.css" type="text/css" media="screen" />
+    
+</head>
+
+<body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">OlegV github io</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
+    <header class="head">
+        <div class="container">
+            <h1>Hi, my name is Oleg.</h1>
+            <p> I`m a newcomer in a web development. </p>
+            <p> Now I`m looking for a javaScript developer position.</p>
+            <p class="apeal"> <a href="#" onclick="showContacts()">Contacts</a>
+            </p>
 
         </div>
-      </div>
+    </header>
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
+    <section class="skills">
+        <div class="container">
+            <div class="content">
+                <h3>I have some skills in:</h3>
+                <div class="row">
+                    <div class="logo-cont shade col-md-2 col-xs-6 col-md-offset-2"><img class="center-block" src="/images/logo/html.png" alt="">
+                    </div>
+                    <div class="logo-cont shade col-md-2 col-xs-6"><img class="center-block" src="/images/logo/css.png" alt="">
+                    </div>
+                    <div class="logo-cont shade col-md-2 col-xs-6"><img class="center-block" src="/images/logo/js.png" alt="">
+                    </div>
+                    <div class="logo-cont shade col-md-2 col-xs-6"><img class="center-block" src="/images/logo/ruby.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="logo-cont shade col-md-2 col-xs-6 col-md-offset-2"><img class="center-block" src="/images/logo/angular.png" alt="">
+                    </div>
+                    <div class="logo-cont shade col-md-2 col-xs-6"><img class="center-block" src="/images/logo/jquery.png" alt="">
+                    </div>
+                    <div class="logo-cont shade col-md-2 col-xs-6"><img class="center-block" src="/images/logo/bootstrap.png" alt="">
+                    </div>
+                    <div class="logo-cont shade col-md-2 col-xs-6"><img class="center-block" src="/images/logo/nodejs.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="logo-cont shade col-md-2 col-xs-6 col-md-offset-2"><img class="center-block" src="/images/logo/ajax.png" alt="">
+                    </div>
+                    <div class="logo-cont shade col-md-2 col-xs-6"><img class="center-block" src="/images/logo/rest_api.png" alt="">
+                    </div>
+                    <div class="logo-cont shade col-md-2 col-xs-6"><img class="center-block" src="/images/logo/json.png" alt="">
+                    </div>
+                    <div class="logo-cont shade col-md-2 col-xs-6 "><img class="center-block" src="/images/logo/github.png" alt="">
+                    </div>
 
-    </div>
+                </div>
+                <div class="row">
+                    <div class="logo-cont shade col-md-2 col-xs-6 col-md-offset-2"><img class="center-block" src="/images/logo/heroku.png" alt="">
+                    </div>
+                    <div class="logo-cont shade col-md-2 col-xs-6"><img class="center-block" src="/images/logo/yeoman.png" alt="">
+                    </div>
+                    <div class="logo-cont shade col-md-2 col-xs-6"><img class="center-block" src="/images/logo/grunt.png" alt="">
+                    </div>
+                    <div class="logo-cont shade col-md-2 col-xs-6"><img class="center-block" src="/images/logo/bower.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <div class="container">
+            <div class="content">
+                <h3>My projects:</h3>
+                <div class="row">
+                    <div class="col-md-4">
+
+                      <a class="fancybox shade" rel="gallery1" href="/images/projects/yunakquiz_0.png">
+                      <img src="/images/projects/yunakquiz_0.png" alt="" />
+                      </a>
+                      <a class="fancybox" rel="gallery1" href="/images/projects/yunakquiz_1.png"></a>
+                      <a class="fancybox" rel="gallery1" href="/images/projects/yunakquiz_2.png"></a>  
+                      <a class="fancybox" rel="gallery1" href="/images/projects/yunakquiz_3.png"></a>  
+                      <a class="fancybox" rel="gallery1" href="/images/projects/yunakquiz_4.png"></a>  
+
+                    
+                    </div>
+                    <div class="col-md-8">
+                    <div class="description">
+                        <h4>
+                          <a >
+                          Yunak Quiz
+                          </a> 
+                          <span> 
+                            <a href="https://github.com/SoftServeUniversity/yunakquiz/tree/Offering" target="_blank"><i class="fa fa-github"></i></a>
+                          </span>  
+                        </h4>
+                        <p> This application was developed for scout organization “Plast”. It gives opportunity to pass quizzes and to check their results. Users also can create new quizzes and moderators are given possibility to review them. </p>
+                        <p>This project was made during SoftServe IT Academy course. It is s SPA build on 
+                        <strong>AngularJs </strong> framework with ruby Sinantra framework on backend. 
+                          
+                        </p>
+                    </div>
+                      
+                    </div>
+              
+
+                </div>
+                
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="expectations">
+    </section>
+
+    <footer class="contacts">
+        <div class="container">
+            <p>I know that my skills and experience are not impressive, but <br> I want to learn and grow up with a team of professionals, that are ready to share their experience.</p>
+            <p> I would appreciate if you can offer any JavaSrcipt developer position, 
+also trainee will be good.</p>
+            <ul class="contacts">
+              <li>  <i class="fa fa-at"></i> <a href="mailto:o.vitvitskyi@gmail.com">o.vitvitskyi@gmail.com</a>  </li>
+              <li>  <i class="fa fa-skype"></i> <a href="skype:skype4_vo?call">skype4vo</a>  </li>
+              <li>  <i class="fa fa-linkedin-square"></i> <a href="http://ua.linkedin.com/in/OlegVitvitskyi">ua.linkedin.com/in/OlegVitvitskyi</a> </li>
+              <li>  <i class="fa fa-github"></i> <a href="http://github.com/OlegV">github.com/OlegV</a> </li>
+
+            </ul>
+        </div>
+    </footer>
+
 
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bxslider-4/dist/jquery.bxslider.js"></script>
+    <script src="bower_components/bxslider-4/dist/jquery.bxslider.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-59363652-1');
+    ga('send', 'pageview');
     </script>
 
-        <!-- build:js(.) scripts/plugins.js -->
-        <script src="bower_components/bootstrap/js/affix.js"></script>
-        <script src="bower_components/bootstrap/js/alert.js"></script>
-        <script src="bower_components/bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/bootstrap/js/modal.js"></script>
-        <script src="bower_components/bootstrap/js/transition.js"></script>
-        <script src="bower_components/bootstrap/js/button.js"></script>
-        <script src="bower_components/bootstrap/js/popover.js"></script>
-        <script src="bower_components/bootstrap/js/carousel.js"></script>
-        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
-        <script src="bower_components/bootstrap/js/collapse.js"></script>
-        <script src="bower_components/bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="bower_components/bootstrap/js/affix.js"></script>
+    <script src="bower_components/bootstrap/js/alert.js"></script>
+    <script src="bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="bower_components/bootstrap/js/modal.js"></script>
+    <script src="bower_components/bootstrap/js/transition.js"></script>
+    <script src="bower_components/bootstrap/js/button.js"></script>
+    <script src="bower_components/bootstrap/js/popover.js"></script>
+    <script src="bower_components/bootstrap/js/carousel.js"></script>
+    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+    
+    <script type="text/javascript" src="/scripts/jquery.fancybox.pack.js"></script>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
+
 </html>

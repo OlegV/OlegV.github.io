@@ -1,89 +1,243 @@
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+/*
+==============================================
+CSS3 ANIMATION CHEAT SHEET
+==============================================
+
+Made by Justin Aguilar
+
+www.justinaguilar.com/animations/
+
+Questions, comments, concerns, love letters:
+justin@justinaguilar.com
+==============================================
+*/
+
+/*
+==============================================
+expandUp
+==============================================
+*/
+
+
+.expandUp{
+  animation-name: expandUp;
+  -webkit-animation-name: expandUp; 
+
+  animation-duration: 0.7s; 
+  -webkit-animation-duration: 0.7s;
+
+  animation-timing-function: ease;  
+  -webkit-animation-timing-function: ease;    
+
+  visibility: visible !important; 
 }
 
-/* Space out content a bit */
+@keyframes expandUp {
+  0% {
+    transform: translateY(100%) scale(0.6) scaleY(0.5);
+  }
+  60%{
+    transform: translateY(-7%) scaleY(1.12);
+  }
+  75%{
+    transform: translateY(3%);
+  } 
+  100% {
+    transform: translateY(0%) scale(1) scaleY(1);
+  } 
+}
+
+@-webkit-keyframes expandUp {
+  0% {
+    -webkit-transform: translateY(100%) scale(0.6) scaleY(0.5);
+  }
+  60%{
+    -webkit-transform: translateY(-7%) scaleY(1.12);
+  }
+  75%{
+    -webkit-transform: translateY(3%);
+  } 
+  100% {
+    -webkit-transform: translateY(0%) scale(1) scaleY(1);
+  } 
+}
+
+
+
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: #f5f5f5;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+ul {
+  list-style: none;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
+a:hover, a:focus {
+  text-decoration: none;
 }
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
+header, footer {
+  background-color: #000;
+  color: #a7a7a7;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  
 }
 
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+header {
+  font-size: 18px;
+  min-height: 200px;
+  padding-top: 40px;
+  transition: all 0.5s;
+
+}
+header a {
+  color: #fff;
+} 
+
+header a:focus, a:hover {
+  color:#fff;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
+h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 200;
+  line-height: 40px;
 }
 
-.marketing p + h4 {
-  margin-top: 28px;
+h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0px;
+  line-height: 2;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+h4 {
+  text-align: left;
+  font-weight: 200;
+  font-size: 20px;
+  margin-top: 0;
 }
+
+.apeal a{
+  font-weight: 100;
+  letter-spacing: 4px;
+  font-size: 1.5em;
+}
+
+a:hover{
+  border-bottom: 1px solid #fff;
+}
+
+.content {
+  margin: 20px 0;
+  min-height: 300px;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+ 
+.skills .row {
+  visibility: hidden;
+}
+
+.logo-cont {
+  height: 80px;
+  padding: 10px;
+  
+  transition: all 0.5s;
+}
+.shade {
+  transition: all 0.3s;
+    -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+.shade:hover{
+
+  -webkit-filter: grayscale(0); 
+}
+
+.logo-cont:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
+.logo-cont img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+
+/* experience */
+.experience span {
+  padding: 0 5px;
+  margin: 0 20px;
+}
+ 
+.experience .row {
+  margin: 10px 0;
+  padding: 10px;
+  
+}
+
+.experience a {
+  color: #333;
+}
+.experience a:hover {
+  border-bottom: 1px solid #333;
+}
+
+
+.fancybox img {
+  width: 95%;
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+}
+
+.experience .description {
+  padding-left: 5%;
+}
+
+
+/* footer */
+.contacts {
+  padding-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.contacts p {
+  color: #B6B6B6;
+  
+}
+
+.contacts li {
+  line-height: 60px;
+  font-weight: 100;
+  display: inline-block;  
+}
+.contacts i {
+  vertical-align: middle;
+  font-size: 20px;
+  padding: 0 5px;
+  
+}
+
+.contacts a {
+  margin-right: 40px;
+  color: #fff;
+}
+
+
+/* remove !!!!! */
+
+
+
+
+
